@@ -24,6 +24,13 @@
 		9B18A03D21723A19002EA40F /* SRToolKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 9B18A03B21723A19002EA40F /* SRToolKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9B18A0942172451C002EA40F /* SRProperty.h in Headers */ = {isa = PBXBuildFile; fileRef = 9B18A0922172451C002EA40F /* SRProperty.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9B18A0952172451C002EA40F /* SRProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B18A0932172451C002EA40F /* SRProperty.m */; };
+		9B18A09F2172FE0D002EA40F /* NSDictionary+SRExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 9B18A09E2172FE0D002EA40F /* NSDictionary+SRExtension.h */; };
+		9B18A0A12172FE37002EA40F /* NSDictionary+SRExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B18A0A02172FE37002EA40F /* NSDictionary+SRExtension.m */; };
+		9B18A0A4217301F3002EA40F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B18A0A3217301F3002EA40F /* UIKit.framework */; };
+		9B18A0A6217301FA002EA40F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B18A0A5217301FA002EA40F /* Foundation.framework */; };
+		9B18A0A821730203002EA40F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B18A0A721730203002EA40F /* CoreGraphics.framework */; };
+		9B18A0AB21730CFE002EA40F /* UINavigationController+SRExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 9B18A0A921730CFE002EA40F /* UINavigationController+SRExtension.h */; };
+		9B18A0AC21730CFE002EA40F /* UINavigationController+SRExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B18A0AA21730CFE002EA40F /* UINavigationController+SRExtension.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +38,13 @@
 		9B18A03B21723A19002EA40F /* SRToolKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SRToolKit.h; sourceTree = "<group>"; };
 		9B18A0922172451C002EA40F /* SRProperty.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SRProperty.h; sourceTree = "<group>"; };
 		9B18A0932172451C002EA40F /* SRProperty.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SRProperty.m; sourceTree = "<group>"; };
+		9B18A09E2172FE0D002EA40F /* NSDictionary+SRExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+SRExtension.h"; sourceTree = "<group>"; };
+		9B18A0A02172FE37002EA40F /* NSDictionary+SRExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+SRExtension.m"; sourceTree = "<group>"; };
+		9B18A0A3217301F3002EA40F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		9B18A0A5217301FA002EA40F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		9B18A0A721730203002EA40F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		9B18A0A921730CFE002EA40F /* UINavigationController+SRExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+SRExtension.h"; sourceTree = "<group>"; };
+		9B18A0AA21730CFE002EA40F /* UINavigationController+SRExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+SRExtension.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +52,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B18A0A821730203002EA40F /* CoreGraphics.framework in Frameworks */,
+				9B18A0A6217301FA002EA40F /* Foundation.framework in Frameworks */,
+				9B18A0A4217301F3002EA40F /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -49,6 +66,7 @@
 			children = (
 				9B18A03A21723A19002EA40F /* SRToolKit */,
 				9B18A03921723A19002EA40F /* Products */,
+				9B18A0A2217301F3002EA40F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -83,6 +101,8 @@
 		9B18A09021724481002EA40F /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				9B18A0A921730CFE002EA40F /* UINavigationController+SRExtension.h */,
+				9B18A0AA21730CFE002EA40F /* UINavigationController+SRExtension.m */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -90,8 +110,20 @@
 		9B18A09121724481002EA40F /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
+				9B18A09E2172FE0D002EA40F /* NSDictionary+SRExtension.h */,
+				9B18A0A02172FE37002EA40F /* NSDictionary+SRExtension.m */,
 			);
 			path = Foundation;
+			sourceTree = "<group>";
+		};
+		9B18A0A2217301F3002EA40F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9B18A0A721730203002EA40F /* CoreGraphics.framework */,
+				9B18A0A5217301FA002EA40F /* Foundation.framework */,
+				9B18A0A3217301F3002EA40F /* UIKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -102,6 +134,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				9B18A0942172451C002EA40F /* SRProperty.h in Headers */,
+				9B18A0AB21730CFE002EA40F /* UINavigationController+SRExtension.h in Headers */,
+				9B18A09F2172FE0D002EA40F /* NSDictionary+SRExtension.h in Headers */,
 				9B18A03D21723A19002EA40F /* SRToolKit.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -194,6 +228,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				9B18A0952172451C002EA40F /* SRProperty.m in Sources */,
+				9B18A0AC21730CFE002EA40F /* UINavigationController+SRExtension.m in Sources */,
+				9B18A0A12172FE37002EA40F /* NSDictionary+SRExtension.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
